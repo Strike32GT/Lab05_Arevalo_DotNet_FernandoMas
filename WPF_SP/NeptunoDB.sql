@@ -120,58 +120,58 @@ CREATE TABLE dbo.DetallePedidos (
 GO
 
 /* ------------------------------------------------------------
-   Información Base
+   Informacion Base
    ------------------------------------------------------------ */
 
 -- Categorias
 INSERT INTO dbo.Categorias (NombreCategoria, Descripcion) VALUES
-(N'Bebidas',            N'Refrescos, caf�s, t�s, cervezas y otras bebidas'),
+(N'Bebidas',            N'Refrescos, cafes, tes, cervezas y otras bebidas'),
 (N'Condimentos',        N'Salsas, especias y aderezos'),
 (N'Confituras',         N'Mermeladas, dulces y postres'),
-(N'L�cteos',            N'Quesos y otros productos l�cteos'),
+(N'Lacteos',            N'Quesos y otros productos lacteos'),
 (N'Carnes y Embutidos', N'Carnes preparadas y embutidos');
 GO
 
 -- Proveedores
 INSERT INTO dbo.Proveedores (CompaniaNombre, NombreContacto, CargoContacto, Direccion, Ciudad, CodigoPostal, Pais, Telefono, Fax) VALUES
-(N'L�cteos Garc�a S.A.',       N'Ana Garc�a',       N'Gerente de Ventas',            N'Av. Los �lamos 245', N'Lima',      N'15024', N'Per�', N'511-4567890', N'511-4567891'),
-(N'Bebidas del Sur Ltda.',     N'Carlos Ram�rez',   N'Jefe Comercial',               N'Jr. Comercio 890',   N'Arequipa',  N'04001', N'Per�', N'054-223344', N'054-223345'),
-(N'Embutidos La Preferida',    N'Mar�a Torres',     N'Coordinadora de Distribuci�n', N'Calle Las Flores 120', N'Trujillo', N'13001', N'Per�', N'044-556677', N'044-556678'),
-(N'Condimentos Andinos SAC',   N'Jorge Quispe',     N'Gerente General',              N'Av. Industrial 500', N'Cusco',     N'08001', N'Per�', N'084-778899', N'084-778900'),
-(N'Dulces del Valle E.I.R.L.', N'Luc�a Fern�ndez',  N'Encargada de Ventas',          N'Jr. San Mart�n 77',  N'Chiclayo',  N'14001', N'Per�', N'074-991122', N'074-991123');
+(N'Lacteos Garcia S.A.',       N'Ana Garcia',       N'Gerente de Ventas',            N'Av. Los Alamos 245', N'Lima',      N'15024', N'Peru', N'511-4567890', N'511-4567891'),
+(N'Bebidas del Sur Ltda.',     N'Carlos Ramirez',   N'Jefe Comercial',               N'Jr. Comercio 890',   N'Arequipa',  N'04001', N'Peru', N'054-223344', N'054-223345'),
+(N'Embutidos La Preferida',    N'Maria Torres',     N'Coordinadora de Distribucion', N'Calle Las Flores 120', N'Trujillo', N'13001', N'Peru', N'044-556677', N'044-556678'),
+(N'Condimentos Andinos SAC',   N'Jorge Quispe',     N'Gerente General',              N'Av. Industrial 500', N'Cusco',     N'08001', N'Peru', N'084-778899', N'084-778900'),
+(N'Dulces del Valle E.I.R.L.', N'Lucia Fernandez',  N'Encargada de Ventas',          N'Jr. San Martin 77',  N'Chiclayo',  N'14001', N'Peru', N'074-991122', N'074-991123');
 GO
 
 -- Clientes
 INSERT INTO dbo.Clientes (Empresa, NombreContacto, Ciudad, Pais, Telefono) VALUES
-(N'Comercial Andina SAC',        N'Pedro Salazar',           N'Lima',     N'Per�', N'511-2345678'),
-(N'Supermercados del Norte',     N'Rosa Medina',             N'Trujillo', N'Per�', N'044-334455'),
-(N'Distribuidora Sure�a EIRL',   N'Luis Ch�vez',             N'Arequipa', N'Per�', N'054-667788'),
-(N'Minimarket Central',          N'Elena Rojas',             N'Cusco',    N'Per�', N'084-112233'),
-(N'Tiendas Express SAC',         N'Miguel �ngel Paredes',    N'Chiclayo', N'Per�', N'074-445566');
+(N'Comercial Andina SAC',        N'Pedro Salazar',           N'Lima',     N'Peru', N'511-2345678'),
+(N'Supermercados del Norte',     N'Rosa Medina',             N'Trujillo', N'Peru', N'044-334455'),
+(N'Distribuidora Surena EIRL',   N'Luis Chavez',             N'Arequipa', N'Peru', N'054-667788'),
+(N'Minimarket Central',          N'Elena Rojas',             N'Cusco',    N'Peru', N'084-112233'),
+(N'Tiendas Express SAC',         N'Miguel Angel Paredes',    N'Chiclayo', N'Peru', N'074-445566');
 GO
 
 -- Empleados
 INSERT INTO dbo.Empleados (Nombre, Apellidos, Cargo, FechaNacimiento, FechaContratacion, Ciudad, Pais) VALUES
-(N'Juan',   N'P�rez G�mez',     N'Vendedor',           '1990-05-12', '2020-01-15', N'Lima',     N'Per�'),
-(N'Mar�a',  N'L�pez D�az',      N'Supervisora de Ventas', '1988-09-23', '2018-03-01', N'Lima',   N'Per�'),
-(N'Carlos', N'Ruiz Mendoza',    N'Vendedor',           '1992-02-17', '2021-06-10', N'Arequipa', N'Per�'),
-(N'Sof�a',  N'Vargas Castro',   N'Gerente Regional',   '1985-11-30', '2015-08-20', N'Trujillo', N'Per�'),
-(N'Diego',  N'Fern�ndez R�os',  N'Vendedor',           '1995-07-08', '2022-02-01', N'Cusco',    N'Per�');
+(N'Juan',   N'Perez Gomez',     N'Vendedor',           '1990-05-12', '2020-01-15', N'Lima',     N'Peru'),
+(N'Maria',  N'Lopez Diaz',      N'Supervisora de Ventas', '1988-09-23', '2018-03-01', N'Lima',   N'Peru'),
+(N'Carlos', N'Ruiz Mendoza',    N'Vendedor',           '1992-02-17', '2021-06-10', N'Arequipa', N'Peru'),
+(N'Sofia',  N'Vargas Castro',   N'Gerente Regional',   '1985-11-30', '2015-08-20', N'Trujillo', N'Peru'),
+(N'Diego',  N'Fernandez Rios',  N'Vendedor',           '1995-07-08', '2022-02-01', N'Cusco',    N'Peru');
 GO
 
 -- Transportistas
 INSERT INTO dbo.Transportistas (CompaniaNombre, Telefono) VALUES
-(N'Transportes R�pido SAC',   N'511-8889900'),
-(N'Env�os Seguros EIRL',      N'511-7776655'),
-(N'Log�stica del Pac�fico',   N'054-990011'),
+(N'Transportes Rapido SAC',   N'511-8889900'),
+(N'Envios Seguros EIRL',      N'511-7776655'),
+(N'Logistica del Pacifico',   N'054-990011'),
 (N'Courier Nacional SA',      N'044-223344'),
 (N'TransAndino Express',      N'084-556677');
 GO
 
 -- Productos
 INSERT INTO dbo.Productos (NombreProducto, ProveedorID, CategoriaID, CantidadPorUnidad, PrecioUnidad, UnidadesEnExistencia, UnidadesEnPedido, NivelDeReorden, Descontinuado) VALUES
-(N'Caf� Andino Premium',    2, 1, N'500 g',  45.90, 120, 30, 20, 0),
-(N'Salsa de Aj� Amarillo',  4, 2, N'300 ml', 12.50, 200, 50, 30, 0),
+(N'Cafe Andino Premium',    2, 1, N'500 g',  45.90, 120, 30, 20, 0),
+(N'Salsa de Aji Amarillo',  4, 2, N'300 ml', 12.50, 200, 50, 30, 0),
 (N'Mermelada de Aguaymanto',5, 3, N'250 g',  15.00,  80, 20, 15, 0),
 (N'Queso Fresco Andino',    1, 4, N'1 kg',   22.00,  60, 10, 10, 0),
 (N'Chorizo Ahumado',        3, 5, N'500 g',  18.75,  90, 25, 20, 0);
@@ -179,11 +179,11 @@ GO
 
 -- Pedidos
 INSERT INTO dbo.Pedidos (ClienteID, EmpleadoID, FechaPedido, FechaRequerida, FechaEnvio, TransportistaID, Destinatario, CiudadDestino, PaisDestino) VALUES
-(1, 1, '2026-08-10', '2026-08-20', '2026-08-15', 1, N'Comercial Andina SAC',      N'Lima',     N'Per�'),
-(2, 3, '2026-08-12', '2026-08-22', '2026-08-18', 3, N'Supermercados del Norte',   N'Trujillo', N'Per�'),
-(3, 2, '2026-08-15', '2026-08-25', NULL,         4, N'Distribuidora Sure�a EIRL', N'Arequipa', N'Per�'),
-(4, 4, '2026-08-20', '2026-08-30', '2026-08-26', 5, N'Minimarket Central',        N'Cusco',    N'Per�'),
-(5, 5, '2026-08-22', '2026-09-01', '2026-08-28', 2, N'Tiendas Express SAC',       N'Chiclayo', N'Per�');
+(1, 1, '2026-08-10', '2026-08-20', '2026-08-15', 1, N'Comercial Andina SAC',      N'Lima',     N'Peru'),
+(2, 3, '2026-08-12', '2026-08-22', '2026-08-18', 3, N'Supermercados del Norte',   N'Trujillo', N'Peru'),
+(3, 2, '2026-08-15', '2026-08-25', NULL,         4, N'Distribuidora Surena EIRL', N'Arequipa', N'Peru'),
+(4, 4, '2026-08-20', '2026-08-30', '2026-08-26', 5, N'Minimarket Central',        N'Cusco',    N'Peru'),
+(5, 5, '2026-08-22', '2026-09-01', '2026-08-28', 2, N'Tiendas Express SAC',       N'Chiclayo', N'Peru');
 GO
 
 -- DetallePedidos
